@@ -14,10 +14,13 @@ Live: _deployed on Vercel_
 
 Plain **HTML, CSS and JavaScript** — no build step, no framework. Fast, accessible and easy to host.
 
+- Warm, editorial design: **Fraunces** serif display + **Hanken Grotesk** body, cream / forest-green palette
 - Light / dark theme with system preference + manual toggle (persisted in `localStorage`)
-- Responsive layout, keyboard-accessible navigation
-- Scroll-reveal animations via `IntersectionObserver` (respects `prefers-reduced-motion`)
-- Inter + JetBrains Mono via Google Fonts
+- Floating capsule navigation with a **⌘K command palette** (keyboard-navigable)
+- Project cards with live screenshots and branded cover tiles
+- Live GitHub contribution graph
+- Scroll fade-in-blur reveals via `IntersectionObserver` (respects `prefers-reduced-motion`)
+- Fully responsive; content visible even with JavaScript disabled
 
 ## Structure
 
@@ -25,10 +28,11 @@ Plain **HTML, CSS and JavaScript** — no build step, no framework. Fast, access
 .
 ├── index.html      # markup and content
 ├── styles.css      # theme + layout
-├── main.js         # theme toggle, nav, reveal animations
+├── main.js         # theme toggle, nav, command palette, reveals
 ├── favicon.svg
 └── assets/
-    └── Rajveer_Bishnoi_Resume.pdf
+    ├── Rajveer_Bishnoi_Resume.pdf
+    └── covers/     # project cover images
 ```
 
 ## Run locally
