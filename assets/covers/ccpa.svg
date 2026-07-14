@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1913"/>
+      <stop offset="1" stop-color="#252017"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7f9b6b"/>
+      <stop offset="1" stop-color="#4f6b45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <g opacity="0.10" stroke="#e9e2d0" stroke-width="1">
+    <circle cx="980" cy="560" r="40" fill="none" stroke-width="2"/><circle cx="1120" cy="500" r="26" fill="none" stroke-width="2"/><circle cx="1120" cy="640" r="26" fill="none" stroke-width="2"/><line x1="1015" y1="545" x2="1096" y2="510"/><line x1="1015" y1="575" x2="1096" y2="630"/>
+  </g>
+  <rect x="80" y="120" width="64" height="8" rx="4" fill="url(#acc)"/>
+  <text x="80" y="112" font-family="ui-monospace, Menlo, monospace" font-size="24" letter-spacing="2" fill="#9bb587">PYTHON · NLP</text>
+  <text x="76" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="700" fill="#f4efe3">CCPA Engine</text>
+  <text x="80" y="430" font-family="Georgia, serif" font-size="34" fill="#c9c2b0" font-style="italic">automated compliance analysis</text>
+</svg>

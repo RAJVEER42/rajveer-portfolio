@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1913"/>
+      <stop offset="1" stop-color="#252017"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7f9b6b"/>
+      <stop offset="1" stop-color="#4f6b45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <g opacity="0.10" stroke="#e9e2d0" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="800"/><line x1="64" y1="0" x2="64" y2="800"/><line x1="128" y1="0" x2="128" y2="800"/><line x1="192" y1="0" x2="192" y2="800"/><line x1="256" y1="0" x2="256" y2="800"/><line x1="320" y1="0" x2="320" y2="800"/><line x1="384" y1="0" x2="384" y2="800"/><line x1="448" y1="0" x2="448" y2="800"/><line x1="512" y1="0" x2="512" y2="800"/><line x1="576" y1="0" x2="576" y2="800"/><line x1="640" y1="0" x2="640" y2="800"/><line x1="704" y1="0" x2="704" y2="800"/><line x1="768" y1="0" x2="768" y2="800"/><line x1="832" y1="0" x2="832" y2="800"/><line x1="896" y1="0" x2="896" y2="800"/><line x1="960" y1="0" x2="960" y2="800"/><line x1="1024" y1="0" x2="1024" y2="800"/><line x1="1088" y1="0" x2="1088" y2="800"/><line x1="1152" y1="0" x2="1152" y2="800"/><line x1="1216" y1="0" x2="1216" y2="800"/><line x1="1280" y1="0" x2="1280" y2="800"/>
+  </g>
+  <rect x="80" y="120" width="64" height="8" rx="4" fill="url(#acc)"/>
+  <text x="80" y="112" font-family="ui-monospace, Menlo, monospace" font-size="24" letter-spacing="2" fill="#9bb587">TYPESCRIPT · SYSTEMS</text>
+  <text x="76" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="700" fill="#f4efe3">Typeahead</text>
+  <text x="80" y="430" font-family="Georgia, serif" font-size="34" fill="#c9c2b0" font-style="italic">low-latency trie + distributed Redis</text>
+</svg>
