@@ -12,3 +12,7 @@ Thumbs.db
 # Logs / deps (none required, but just in case)
 node_modules/
 *.log
+
+# large source photo (cropped version committed instead)
+assets/IMG_*.JPG
+assets/IMG_*.jpg
