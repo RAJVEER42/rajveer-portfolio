@@ -16,3 +16,4 @@ node_modules/
 # large source photo (cropped version committed instead)
 assets/IMG_*.JPG
 assets/IMG_*.jpg
+assets/ghibli_transparent.png
