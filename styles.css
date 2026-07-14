@@ -130,8 +130,10 @@ img{ max-width:100%; display:block; }
 .cmdk-empty{ padding:20px; text-align:center; color:var(--faint); font-size:.9rem; }
 
 /* ---------- Hero ---------- */
-.hero{ display:grid; grid-template-columns:1.35fr 1fr; gap:48px; align-items:center;
+.hero{ position:relative; overflow:hidden; display:grid; grid-template-columns:1.35fr 1fr; gap:48px; align-items:center;
   padding:64px 24px 56px; }
+.ascii-bg{ position:absolute; inset:0; z-index:0; pointer-events:none; }
+.hero-left, .hero-right{ position:relative; z-index:2; }
 .kicker{ font-family:var(--mono); font-size:.76rem; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; }
 .hero-name{ font-family:var(--serif); font-weight:600; font-size:clamp(3.2rem,7vw,5rem); letter-spacing:-.01em; margin:0 0 6px; }
 .hero-role{ font-family:var(--serif); font-weight:400; font-style:italic; font-size:clamp(1.3rem,3vw,1.9rem); color:var(--muted); margin:0 0 22px; }

@@ -164,6 +164,64 @@
     document.addEventListener("mouseenter", function () { if (ready) root.classList.add("cursor-ready"); });
   }
 
+  /* ---------- Interactive ASCII hero background ---------- */
+  var hero = document.querySelector(".hero");
+  if (hero && document.createElement("canvas").getContext) {
+    var canvas = document.createElement("canvas");
+    canvas.className = "ascii-bg"; canvas.setAttribute("aria-hidden", "true");
+    hero.insertBefore(canvas, hero.firstChild);
+    var ctx = canvas.getContext("2d");
+    var RAMP = " .:-=+*#%@";
+    var CELL = 16, W = 0, H = 0, cols = 0, rows = 0;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var mx = -9999, my = -9999, hasMouse = false;
+    var accent = "#4f6b45";
+    function readAccent() { var c = getComputedStyle(root).getPropertyValue("--accent").trim(); if (c) accent = c; }
+    readAccent();
+    if (window.MutationObserver) new MutationObserver(readAccent).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+    function resize() {
+      var r = hero.getBoundingClientRect(); W = r.width; H = r.height;
+      canvas.width = Math.floor(W * dpr); canvas.height = Math.floor(H * dpr);
+      canvas.style.width = W + "px"; canvas.style.height = H + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cols = Math.ceil(W / CELL) + 1; rows = Math.ceil(H / CELL) + 1;
+      ctx.font = (CELL - 3) + "px 'JetBrains Mono', ui-monospace, monospace";
+      ctx.textBaseline = "top";
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    hero.addEventListener("mousemove", function (e) { var r = hero.getBoundingClientRect(); mx = e.clientX - r.left; my = e.clientY - r.top; hasMouse = true; }, { passive: true });
+    hero.addEventListener("mouseleave", function () { hasMouse = false; });
+    var visible = true;
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }).observe(hero);
+    var reduceMo = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var t = 0;
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      ctx.fillStyle = accent;
+      var R2 = 118 * 118;
+      for (var y = 0; y < rows; y++) {
+        for (var x = 0; x < cols; x++) {
+          var px = x * CELL, py = y * CELL;
+          var v = 0.5 + 0.5 * Math.sin(x * 0.24 + t * 0.6) * Math.cos(y * 0.27 - t * 0.5);
+          if (hasMouse) {
+            var dx = px - mx, dy = py - my;
+            v = v * 0.55 + Math.exp(-(dx * dx + dy * dy) / (2 * R2)) * 1.25;
+          } else { v *= 0.5; }
+          if (v < 0.14) continue;
+          if (v > 1) v = 1;
+          var ch = RAMP[Math.min(RAMP.length - 1, (v * RAMP.length) | 0)];
+          if (ch === " ") continue;
+          ctx.globalAlpha = v * 0.42;
+          ctx.fillText(ch, px, py);
+        }
+      }
+      ctx.globalAlpha = 1;
+    }
+    if (reduceMo) { draw(); }
+    else { var fr = 0; (function loop() { fr++; if (visible && fr % 2 === 0) { t += 0.033; draw(); } requestAnimationFrame(loop); })(); }
+  }
+
   /* ---------- Year ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
