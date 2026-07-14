@@ -4,428 +4,373 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script>document.documentElement.classList.add('js');</script>
-  <title>Rajveer Bishnoi — Open-Source Contributor & Full-Stack / AI Engineer</title>
-  <meta name="description" content="Rajveer Bishnoi — Computer Science student, open-source contributor with 60+ merged PRs (GRASS GIS, FOSSology, QGIS), and full-stack / AI engineer building RAG systems and LLM agents." />
+  <title>Rajveer Bishnoi — Full-Stack &amp; AI Engineer · Open-Source Contributor</title>
+  <meta name="description" content="Rajveer Bishnoi — full-stack & AI engineer and open-source contributor with 60+ merged PRs across GRASS GIS, FOSSology and QGIS. RAG systems, LLM agents and real-time products." />
   <meta name="author" content="Rajveer Bishnoi" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Rajveer Bishnoi — Open-Source Contributor & Full-Stack / AI Engineer" />
+  <meta property="og:title" content="Rajveer Bishnoi — Full-Stack & AI Engineer" />
   <meta property="og:description" content="60+ merged open-source PRs across GRASS GIS, FOSSology and QGIS. Builds RAG systems, LLM agents and full-stack products." />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ===== Nav ===== -->
+  <!-- ===== Floating capsule nav ===== -->
   <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#top" class="brand" aria-label="Rajveer Bishnoi — home">
-        <span class="brand-mark">RB</span>
-        <span class="brand-name">Rajveer Bishnoi</span>
-      </a>
-
+    <div class="nav-pill">
+      <a href="#top" class="brand" aria-label="Rajveer Bishnoi — home"><span class="brand-mark">RB</span></a>
       <nav class="nav-links" aria-label="Primary">
+        <a href="#experience">Work</a>
         <a href="#projects">Projects</a>
         <a href="#open-source">Open Source</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-
       <div class="nav-actions">
-        <a class="btn btn-ghost resume-link" href="assets/Rajveer_Bishnoi_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        <button class="search-btn" id="search-btn" type="button" aria-label="Open command palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <span>Search</span><kbd>⌘K</kbd>
+        </button>
         <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
         </button>
         <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         </button>
       </div>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="#experience">Work</a>
       <a href="#projects">Projects</a>
       <a href="#open-source">Open Source</a>
-      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
       <a href="assets/Rajveer_Bishnoi_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
     </nav>
   </header>
 
+  <!-- ===== Command palette ===== -->
+  <div class="cmdk" id="cmdk" hidden>
+    <div class="cmdk-backdrop" data-close></div>
+    <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="cmdk-input-row">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="cmdk-input" type="text" placeholder="Jump to a section or link…" autocomplete="off" spellcheck="false" />
+        <kbd>esc</kbd>
+      </div>
+      <ul class="cmdk-list" id="cmdk-list" role="listbox"></ul>
+    </div>
+  </div>
+
   <main id="main">
     <span id="top"></span>
 
     <!-- ===== Hero ===== -->
-    <section class="hero">
-      <div class="wrap">
-        <p class="kicker reveal">Jodhpur / Bengaluru, India</p>
-        <h1 class="hero-title reveal">
-          Rajveer Bishnoi
-        </h1>
-        <p class="hero-tagline reveal">
-          Open-source contributor &amp; full-stack / AI engineer. I ship products end to end and
-          contribute to large open-source projects — <strong>60+ merged pull requests</strong> across
-          GRASS GIS, FOSSology and QGIS.
+    <section class="hero wrap">
+      <div class="hero-left reveal">
+        <p class="kicker">Jodhpur / Bengaluru, India</p>
+        <h1 class="hero-name">I&rsquo;m Rajveer</h1>
+        <p class="hero-role">Full-Stack &amp; AI Engineer, Open-Source Contributor.</p>
+        <p class="hero-copy">
+          I build products with an <strong>AI-first mindset</strong> using
+          <span class="pill">Python</span><span class="pill">React</span><span class="pill">Next.js</span><span class="pill">RAG</span><span class="pill">PostgreSQL</span>.
+          I ship end to end and contribute to large open-source projects —
+          <strong>60+ merged pull requests</strong> across GRASS GIS, FOSSology and QGIS.
         </p>
-        <p class="hero-sub reveal">
-          Second-year CS student at Scaler School of Technology. I build RAG systems, LLM agents and
-          real-time platforms — and was admitted to the <strong>Apple Developer Academy</strong>
-          (Università Federico II with Apple) on a full EU-funded scholarship.
-        </p>
-        <div class="hero-cta reveal">
-          <a class="btn btn-primary" href="#projects">View projects</a>
-          <a class="btn btn-ghost" href="assets/Rajveer_Bishnoi_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+        <div class="social-row" aria-label="Profiles">
+          <a href="https://github.com/RAJVEER42" target="_blank" rel="noopener" aria-label="GitHub @RAJVEER42" title="GitHub · @RAJVEER42"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.74-1.56-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+          <a href="https://github.com/Valyrian-Code" target="_blank" rel="noopener" aria-label="GitHub @Valyrian-Code" title="GitHub · @Valyrian-Code (open source)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.74-1.56-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+          <a href="https://www.linkedin.com/in/rajveer-bishnoi-576b62356" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg></a>
+          <a href="mailto:irajveer.bishnoi2310@gmail.com" aria-label="Email" title="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6 9-6"/></svg></a>
         </div>
-        <ul class="hero-links reveal" aria-label="Profiles">
-          <li><a href="https://github.com/RAJVEER42" target="_blank" rel="noopener">GitHub · @RAJVEER42</a></li>
-          <li><a href="https://github.com/Valyrian-Code" target="_blank" rel="noopener">GitHub · @Valyrian-Code</a></li>
-          <li><a href="https://www.linkedin.com/in/rajveer-bishnoi-576b62356" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://samaysarathi.in" target="_blank" rel="noopener">samaysarathi.in</a></li>
-          <li><a href="mailto:irajveer.bishnoi2310@gmail.com">Email</a></li>
-        </ul>
-
-        <div class="stats reveal" aria-label="Highlights">
-          <div class="stat"><span class="stat-num">60+</span><span class="stat-label">merged OSS PRs</span></div>
-          <div class="stat"><span class="stat-num">3</span><span class="stat-label">major FOSS orgs</span></div>
-          <div class="stat"><span class="stat-num">Top&nbsp;100</span><span class="stat-label">Meta Hackathon '25</span></div>
-          <div class="stat"><span class="stat-num">Rank&nbsp;60</span><span class="stat-label">SSOC '25</span></div>
+        <div class="hero-cta">
+          <a class="btn btn-ghost" href="assets/Rajveer_Bishnoi_Resume.pdf" target="_blank" rel="noopener">Résumé / CV</a>
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
         </div>
       </div>
-    </section>
 
-    <!-- ===== Projects ===== -->
-    <section class="section" id="projects">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <span class="section-kicker">01 — Work</span>
-          <h2>Selected Projects</h2>
-          <p class="section-desc">A mix of real-time products, RAG systems, LLM agents and backend systems. More on my <a href="https://github.com/RAJVEER42" target="_blank" rel="noopener">GitHub</a>.</p>
-        </header>
-
-        <div class="cards">
-
-          <article class="card card-feature reveal">
-            <div class="card-top">
-              <span class="badge">Flagship · Co-founder</span>
-              <div class="card-links">
-                <a href="https://samaysarathi.in" target="_blank" rel="noopener" aria-label="Live site">Live ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">Samay Sarathi</h3>
-            <p class="card-desc">
-              A national real-time platform that connects ambulances, hospitals and traffic police on one
-              network to protect the emergency “golden hour”. Multi-role mobile apps with live WebSocket
-              tracking and a recommendation engine that ranks hospitals by bed availability, specialist
-              match, distance and live traffic. Presented at India Innovates 2026.
-            </p>
-            <ul class="tags">
-              <li>Flutter</li><li>Spring Boot / Java 21</li><li>WebSocket</li><li>PostgreSQL + PostGIS</li><li>Redis</li><li>Google Maps</li>
-            </ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">AI Agent</span>
-              <div class="card-links">
-                <a href="https://github.com/RAJVEER42/rajveer-ai-persona" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">AI Persona (voice + RAG)</h3>
-            <p class="card-desc">
-              A conversational AI representative — chat and voice, RAG over personal context, and real
-              calendar booking so people can talk to “me” and schedule a call.
-            </p>
-            <ul class="tags"><li>Python</li><li>RAG</li><li>Voice</li><li>LLM</li><li>Calendar API</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">RAG</span>
-              <div class="card-links">
-                <a href="https://notebook-llm-five.vercel.app/" target="_blank" rel="noopener">Live ↗</a>
-                <a href="https://github.com/RAJVEER42/Notebook_LLM" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">DocBlock</h3>
-            <p class="card-desc">
-              A neo-brutalist take on NotebookLM: upload a PDF or TXT and chat with it, with page-level
-              citations. Per-document Qdrant collections, recursive chunking and a strict prompt keep every
-              answer grounded in the source.
-            </p>
-            <ul class="tags"><li>Next.js</li><li>LangChain</li><li>Qdrant</li><li>Groq</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">RAG</span>
-              <div class="card-links">
-                <a href="https://github.com/RAJVEER42/clearpath-chatbot" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">ClearPath Chatbot</h3>
-            <p class="card-desc">
-              An AI HR assistant that answers policy questions using retrieval-augmented generation with
-              hybrid BM25 + semantic retrieval for accurate, grounded responses.
-            </p>
-            <ul class="tags"><li>TypeScript</li><li>RAG</li><li>BM25</li><li>Embeddings</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">Backend / Systems</span>
-              <div class="card-links">
-                <a href="https://github.com/RAJVEER42/Typeahead-Search" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">Typeahead Search</h3>
-            <p class="card-desc">
-              A low-latency search typeahead: trie-based serving with a distributed Redis cache, designed
-              for fast prefix lookups at scale.
-            </p>
-            <ul class="tags"><li>TypeScript</li><li>Trie</li><li>Redis</li><li>Caching</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">AI / Compliance</span>
-              <div class="card-links">
-                <a href="https://github.com/RAJVEER42/ccpa-compliance-engine" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">CCPA Compliance Engine</h3>
-            <p class="card-desc">
-              An AI system that evaluates a business’s data practices against CCPA requirements and flags
-              gaps, turning a manual review into an automated analysis.
-            </p>
-            <ul class="tags"><li>Python</li><li>LLM</li><li>NLP</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">LLM</span>
-              <div class="card-links">
-                <a href="https://ai-persona-ten.vercel.app/" target="_blank" rel="noopener">Live ↗</a>
-                <a href="https://github.com/RAJVEER42/AI-Persona" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">Multi-Persona Chatbot</h3>
-            <p class="card-desc">
-              A chatbot with distinct instructor personas driven by custom Gemini system prompts using
-              few-shot and chain-of-thought examples. Deployed on Vercel.
-            </p>
-            <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>Gemini</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">CLI Agent</span>
-              <div class="card-links">
-                <a href="https://github.com/RAJVEER42/agent-cli-scaler" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">Agent CLI</h3>
-            <p class="card-desc">
-              A command-line AI agent with a step-by-step reasoning loop that clones a live website into
-              working HTML, CSS and JavaScript. Supports multiple LLM providers.
-            </p>
-            <ul class="tags"><li>Node.js</li><li>OpenAI SDK</li><li>Agents</li></ul>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-top">
-              <span class="badge badge-soft">Full-Stack</span>
-              <div class="card-links">
-                <a href="https://github.com/RAJVEER42/ai-job-portal" target="_blank" rel="noopener">Code ↗</a>
-              </div>
-            </div>
-            <h3 class="card-title">AI Job Portal</h3>
-            <p class="card-desc">
-              A full-stack job portal with AI-assisted matching between candidates and roles, built on a
-              Java backend.
-            </p>
-            <ul class="tags"><li>Java</li><li>Spring</li><li>AI matching</li></ul>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Open Source ===== -->
-    <section class="section section-alt" id="open-source">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <span class="section-kicker">02 — Open Source</span>
-          <h2>Open-Source Contributions</h2>
-          <p class="section-desc">
-            60+ merged pull requests to major FOSS projects, mostly under
-            <a href="https://github.com/Valyrian-Code" target="_blank" rel="noopener">@Valyrian-Code</a>.
-            GitHub achievements: Pull Shark (×2), Pair Extraordinaire, Quickdraw.
-          </p>
-        </header>
-
-        <div class="oss-grid">
-          <article class="oss-card reveal">
-            <div class="oss-head">
-              <h3>GRASS GIS</h3>
-              <span class="oss-count">22 merged PRs</span>
-            </div>
-            <p class="oss-org">OSGeo · geospatial processing engine</p>
-            <p class="card-desc">
-              Migrated legacy <code>gunittest</code> suites to <code>pytest</code> across raster and
-              temporal modules, added regression tests, and fixed bugs in several tools
-              (r.fillnulls, r.semantic.label, r.sim.water). Wrote tutorials for the project.
-            </p>
-            <a class="oss-link" href="https://github.com/OSGeo/grass/pulls?q=is%3Apr+author%3AValyrian-Code" target="_blank" rel="noopener">View PRs ↗</a>
-          </article>
-
-          <article class="oss-card reveal">
-            <div class="oss-head">
-              <h3>FOSSology</h3>
-              <span class="oss-count">10+ merged PRs</span>
-            </div>
-            <p class="oss-org">Linux Foundation · license compliance</p>
-            <p class="card-desc">
-              Extended the official Python API client with wrappers for new endpoints (uploads, license
-              import/export CSV, report import), added error-path unit tests, and fixed API
-              error-handling and data-parsing bugs.
-            </p>
-            <a class="oss-link" href="https://github.com/fossology/fossology-python/pulls?q=is%3Apr+author%3AValyrian-Code" target="_blank" rel="noopener">View PRs ↗</a>
-          </article>
-
-          <article class="oss-card reveal">
-            <div class="oss-head">
-              <h3>QGIS</h3>
-              <span class="oss-count">Merged</span>
-            </div>
-            <p class="oss-org">QGIS.org · open-source GIS</p>
-            <p class="card-desc">
-              Fixed bugs in the website’s commercial-contributors script — a division-by-zero on empty
-              data and valid support URLs being removed when a link check failed temporarily.
-            </p>
-            <a class="oss-link" href="https://github.com/qgis/QGIS-Website/pulls?q=is%3Apr+author%3AValyrian-Code" target="_blank" rel="noopener">View PRs ↗</a>
-          </article>
+      <div class="hero-right reveal">
+        <div class="portrait" aria-hidden="true"><span>RB</span></div>
+        <div class="now-card">
+          <div class="now-head"><span class="pulse"></span> CURRENTLY BUILDING</div>
+          <div class="now-body">
+            <div class="now-title">Samay Sarathi</div>
+            <div class="now-sub">National emergency-response platform · live at samaysarathi.in</div>
+          </div>
+          <div class="now-foot">Next: Apple Developer Academy &rsquo;26, Naples</div>
         </div>
       </div>
     </section>
 
     <!-- ===== Experience ===== -->
-    <section class="section" id="experience">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <span class="section-kicker">03 — Experience</span>
-          <h2>Experience</h2>
-        </header>
+    <section class="section wrap" id="experience">
+      <header class="section-head reveal">
+        <span class="section-kicker">— Featured</span>
+        <h2>Experience</h2>
+      </header>
 
-        <ol class="timeline">
-          <li class="tl-item reveal">
-            <div class="tl-dot" aria-hidden="true"></div>
-            <div class="tl-body">
-              <div class="tl-row"><h3>Teaching Assistant — Buddy Program</h3><span class="tl-date">Mar 2026 — Present</span></div>
-              <p class="tl-org">Scaler School of Technology</p>
-              <p class="card-desc">Support junior students in Web Development and Linear Algebra, running weekly one-on-one mentoring and answering questions within 24–48 hours.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <div class="tl-dot" aria-hidden="true"></div>
-            <div class="tl-body">
-              <div class="tl-row"><h3>Project Admin &amp; Contributor</h3><span class="tl-date">Jul — Oct 2025</span></div>
-              <p class="tl-org">GirlScript Summer of Code</p>
-              <p class="card-desc">Started as a contributor (React.js, Express.js) and was promoted to Project Admin — managed pull requests, mentored contributors, and ran issue triage and release planning.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <div class="tl-dot" aria-hidden="true"></div>
-            <div class="tl-body">
-              <div class="tl-row"><h3>Open-Source Contributor — Rank 60</h3><span class="tl-date">Jun — Aug 2025</span></div>
-              <p class="tl-org">Social Summer of Code (SSOC '25)</p>
-              <p class="card-desc">Finished 60th nationally with 260 points and 7 merged pull requests. Worked on responsive UI redesigns and a live password-strength meter, contributing to the Ruby for Good (CASA) project.</p>
-            </div>
-          </li>
-        </ol>
+      <div class="exp reveal">
+        <div class="exp-row">
+          <h3>Teaching Assistant — Buddy Program</h3>
+          <span class="exp-date"><span class="dot-working"></span> Mar 2026 – Present</span>
+        </div>
+        <p class="exp-org">Scaler School of Technology · Bengaluru</p>
+        <ul class="tags">
+          <li>Web Dev</li><li>Linear Algebra</li><li>Mentoring</li>
+        </ul>
+        <ul class="bullets">
+          <li>Support junior students in Web Development and Linear Algebra, running weekly one-on-one mentoring and resolving doubts within 24–48 hours.</li>
+        </ul>
+      </div>
+
+      <div class="exp reveal">
+        <div class="exp-row">
+          <h3>Project Admin &amp; Contributor</h3>
+          <span class="exp-date">Jul – Oct 2025</span>
+        </div>
+        <p class="exp-org">GirlScript Summer of Code</p>
+        <ul class="tags">
+          <li>React.js</li><li>Express.js</li><li>Mentorship</li>
+        </ul>
+        <ul class="bullets">
+          <li>Promoted from contributor to Project Admin — managed pull requests, mentored contributors, and ran issue triage and release planning.</li>
+        </ul>
+      </div>
+
+      <div class="exp reveal">
+        <div class="exp-row">
+          <h3>Open-Source Contributor — Rank 60</h3>
+          <span class="exp-date">Jun – Aug 2025</span>
+        </div>
+        <p class="exp-org">Social Summer of Code (SSOC &rsquo;25)</p>
+        <ul class="tags">
+          <li>UI</li><li>zxcvbn</li><li>Ruby for Good</li>
+        </ul>
+        <ul class="bullets">
+          <li>Finished 60th nationally (260 points, 7 merged PRs). Built responsive UI redesigns and a live password-strength meter, contributing to the Ruby for Good (CASA) project.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section wrap" id="projects">
+      <header class="section-head reveal">
+        <span class="section-kicker">— Featured</span>
+        <h2>Projects</h2>
+        <p class="section-desc">Real-time products, RAG systems, LLM agents and backend systems. More on <a href="https://github.com/RAJVEER42" target="_blank" rel="noopener">GitHub</a>.</p>
+      </header>
+
+      <div class="proj-grid">
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://samaysarathi.in" target="_blank" rel="noopener"><img src="assets/covers/samay.png" alt="Samay Sarathi — The Golden Hour" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>Samay Sarathi</h3><div class="proj-links"><a href="https://samaysarathi.in" target="_blank" rel="noopener" title="Live" aria-label="Live site">↗</a></div></div>
+            <p class="proj-desc">Co-founded a national real-time platform connecting ambulances, hospitals and traffic police to protect the emergency “golden hour”. Presented at India Innovates 2026.</p>
+            <ul class="tags"><li>Flutter</li><li>Spring Boot</li><li>WebSocket</li><li>PostGIS</li><li>Redis</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://notebook-llm-five.vercel.app/" target="_blank" rel="noopener"><img src="assets/covers/docblock.png" alt="DocBlock — chat with your PDFs" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>DocBlock</h3><div class="proj-links"><a href="https://notebook-llm-five.vercel.app/" target="_blank" rel="noopener" title="Live" aria-label="Live">↗</a><a href="https://github.com/RAJVEER42/Notebook_LLM" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">A neo-brutalist take on NotebookLM: chat with a PDF, with page-level citations. Per-document Qdrant collections and a strict prompt keep answers grounded.</p>
+            <ul class="tags"><li>Next.js</li><li>LangChain</li><li>Qdrant</li><li>Groq</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://ai-persona-ten.vercel.app/" target="_blank" rel="noopener"><img src="assets/covers/aipersona.png" alt="Scaler Personas — multi-persona chatbot" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>Scaler Personas</h3><div class="proj-links"><a href="https://ai-persona-ten.vercel.app/" target="_blank" rel="noopener" title="Live" aria-label="Live">↗</a><a href="https://github.com/RAJVEER42/AI-Persona" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">A multi-persona chatbot driven by custom Gemini system prompts with few-shot and chain-of-thought examples.</p>
+            <ul class="tags"><li>React</li><li>Node.js</li><li>Gemini</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://github.com/RAJVEER42/rajveer-ai-persona" target="_blank" rel="noopener"><img src="assets/covers/aipersonavoice.svg" alt="AI Persona — voice + RAG" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>AI Persona (voice + RAG)</h3><div class="proj-links"><a href="https://github.com/RAJVEER42/rajveer-ai-persona" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">A conversational AI representative — chat and voice, RAG over personal context, and real calendar booking.</p>
+            <ul class="tags"><li>Python</li><li>RAG</li><li>Voice</li><li>LLM</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://github.com/RAJVEER42/clearpath-chatbot" target="_blank" rel="noopener"><img src="assets/covers/clearpath.svg" alt="ClearPath — HR RAG assistant" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>ClearPath Chatbot</h3><div class="proj-links"><a href="https://github.com/RAJVEER42/clearpath-chatbot" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">An AI HR assistant answering policy questions with retrieval-augmented generation and hybrid BM25 + semantic retrieval.</p>
+            <ul class="tags"><li>TypeScript</li><li>RAG</li><li>BM25</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://github.com/RAJVEER42/Typeahead-Search" target="_blank" rel="noopener"><img src="assets/covers/typeahead.svg" alt="Typeahead Search — trie + Redis" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>Typeahead Search</h3><div class="proj-links"><a href="https://github.com/RAJVEER42/Typeahead-Search" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">A low-latency search typeahead: trie-based serving with a distributed Redis cache for fast prefix lookups at scale.</p>
+            <ul class="tags"><li>TypeScript</li><li>Redis</li><li>Systems</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://github.com/RAJVEER42/ccpa-compliance-engine" target="_blank" rel="noopener"><img src="assets/covers/ccpa.svg" alt="CCPA Compliance Engine" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>CCPA Compliance Engine</h3><div class="proj-links"><a href="https://github.com/RAJVEER42/ccpa-compliance-engine" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">An AI system that evaluates a business’s data practices against CCPA requirements and flags gaps automatically.</p>
+            <ul class="tags"><li>Python</li><li>LLM</li><li>NLP</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://github.com/RAJVEER42/agent-cli-scaler" target="_blank" rel="noopener"><img src="assets/covers/agentcli.svg" alt="Agent CLI" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>Agent CLI</h3><div class="proj-links"><a href="https://github.com/RAJVEER42/agent-cli-scaler" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">A command-line AI agent with a step-by-step reasoning loop that clones a live website into working HTML, CSS and JS.</p>
+            <ul class="tags"><li>Node.js</li><li>OpenAI SDK</li><li>Agents</li></ul>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <a class="proj-cover" href="https://github.com/RAJVEER42/ai-job-portal" target="_blank" rel="noopener"><img src="assets/covers/jobportal.svg" alt="AI Job Portal" loading="lazy" /></a>
+          <div class="proj-body">
+            <div class="proj-top"><h3>AI Job Portal</h3><div class="proj-links"><a href="https://github.com/RAJVEER42/ai-job-portal" target="_blank" rel="noopener" title="Code" aria-label="Code">&lt;/&gt;</a></div></div>
+            <p class="proj-desc">A full-stack job portal with AI-assisted matching between candidates and roles, built on a Java backend.</p>
+            <ul class="tags"><li>Java</li><li>Spring</li><li>Full-stack</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Open Source ===== -->
+    <section class="section wrap" id="open-source">
+      <header class="section-head reveal">
+        <span class="section-kicker">— Open Source</span>
+        <h2>Open-Source Contributions</h2>
+        <p class="section-desc">60+ merged pull requests to major FOSS projects, mostly under <a href="https://github.com/Valyrian-Code" target="_blank" rel="noopener">@Valyrian-Code</a>. GitHub: Pull Shark (×2), Pair Extraordinaire, Quickdraw.</p>
+      </header>
+
+      <div class="oss-grid">
+        <article class="oss reveal">
+          <div class="oss-head"><h3>GRASS GIS</h3><span class="oss-count">22 merged</span></div>
+          <p class="oss-org">OSGeo · geospatial processing engine</p>
+          <p class="proj-desc">Migrated legacy <code>gunittest</code> suites to <code>pytest</code> across raster and temporal modules, added regression tests, and fixed bugs in several tools (r.fillnulls, r.semantic.label, r.sim.water).</p>
+          <a class="oss-link" href="https://github.com/OSGeo/grass/pulls?q=is%3Apr+author%3AValyrian-Code" target="_blank" rel="noopener">View PRs ↗</a>
+        </article>
+        <article class="oss reveal">
+          <div class="oss-head"><h3>FOSSology</h3><span class="oss-count">10+ merged</span></div>
+          <p class="oss-org">Linux Foundation · license compliance</p>
+          <p class="proj-desc">Extended the official Python API client with wrappers for new endpoints (uploads, license import/export CSV, report import), added error-path tests, and fixed API bugs.</p>
+          <a class="oss-link" href="https://github.com/fossology/fossology-python/pulls?q=is%3Apr+author%3AValyrian-Code" target="_blank" rel="noopener">View PRs ↗</a>
+        </article>
+        <article class="oss reveal">
+          <div class="oss-head"><h3>QGIS</h3><span class="oss-count">merged</span></div>
+          <p class="oss-org">QGIS.org · open-source GIS</p>
+          <p class="proj-desc">Fixed bugs in the website’s commercial-contributors script — a division-by-zero on empty data and valid support URLs being dropped on transient link-check failures.</p>
+          <a class="oss-link" href="https://github.com/qgis/QGIS-Website/pulls?q=is%3Apr+author%3AValyrian-Code" target="_blank" rel="noopener">View PRs ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== About / Me ===== -->
+    <section class="section wrap" id="about">
+      <header class="section-head reveal">
+        <span class="section-kicker">— About</span>
+        <h2>Me</h2>
+      </header>
+      <div class="me reveal">
+        <div class="me-portrait" aria-hidden="true"><span>RB</span></div>
+        <div class="me-body">
+          <h3>Rajveer Bishnoi</h3>
+          <p class="proj-desc">Second-year Computer Science student at Scaler School of Technology. I treat AI as a leverage multiplier — building RAG systems, LLM agents and real-time products end to end — and I contribute heavily to open source. Admitted to the <strong>Apple Developer Academy</strong> (Università Federico II with Apple, 2026–27) on a full EU-funded scholarship.</p>
+          <p class="me-label">Core technologies</p>
+          <ul class="tags"><li>Python</li><li>TypeScript</li><li>React / Next.js</li><li>Node.js</li><li>Spring Boot</li><li>PyTorch</li><li>LangChain</li><li>Qdrant</li><li>PostgreSQL</li><li>Docker</li></ul>
+        </div>
+      </div>
+
+      <div class="gh reveal">
+        <p class="me-label">GitHub activity — <a href="https://github.com/RAJVEER42" target="_blank" rel="noopener">@RAJVEER42</a></p>
+        <a class="gh-chart" href="https://github.com/RAJVEER42" target="_blank" rel="noopener">
+          <img src="https://ghchart.rshah.org/4f6b45/RAJVEER42" alt="RAJVEER42 GitHub contribution chart" loading="lazy" />
+        </a>
       </div>
     </section>
 
     <!-- ===== Skills ===== -->
-    <section class="section section-alt" id="skills">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <span class="section-kicker">04 — Toolkit</span>
-          <h2>Technical Skills</h2>
-        </header>
-        <div class="skills-grid">
-          <div class="skill-group reveal"><h3>Languages</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>TypeScript</li><li>Dart</li><li>SQL</li></ul></div>
-          <div class="skill-group reveal"><h3>Machine Learning &amp; AI</h3><ul class="tags"><li>PyTorch</li><li>RAG</li><li>LangChain</li><li>Qdrant</li><li>FAISS</li><li>BM25</li><li>sentence-transformers</li><li>Groq</li><li>Gemini</li><li>Hugging Face</li></ul></div>
-          <div class="skill-group reveal"><h3>Web &amp; Mobile</h3><ul class="tags"><li>React</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Spring Boot</li><li>FastAPI</li><li>Flutter</li><li>Tailwind CSS</li></ul></div>
-          <div class="skill-group reveal"><h3>Testing &amp; Open Source</h3><ul class="tags"><li>pytest</li><li>gunittest</li><li>Git</li><li>CI/CD</li><li>REST APIs</li><li>code review</li></ul></div>
-          <div class="skill-group reveal"><h3>Databases &amp; Cloud</h3><ul class="tags"><li>PostgreSQL</li><li>PostGIS</li><li>MySQL</li><li>Redis</li><li>Firebase</li><li>Docker</li><li>GCP Cloud Run</li><li>Vercel</li></ul></div>
-        </div>
+    <section class="section wrap" id="skills">
+      <header class="section-head reveal">
+        <span class="section-kicker">— Toolkit</span>
+        <h2>Skills</h2>
+      </header>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><h3>Languages</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>TypeScript</li><li>Dart</li><li>SQL</li></ul></div>
+        <div class="skill-card reveal"><h3>Machine Learning &amp; AI</h3><ul class="tags"><li>PyTorch</li><li>RAG</li><li>LangChain</li><li>Qdrant</li><li>FAISS</li><li>BM25</li><li>sentence-transformers</li><li>Groq</li><li>Gemini</li><li>Hugging Face</li></ul></div>
+        <div class="skill-card reveal"><h3>Web &amp; Mobile</h3><ul class="tags"><li>React</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Spring Boot</li><li>FastAPI</li><li>Flutter</li><li>Tailwind</li></ul></div>
+        <div class="skill-card reveal"><h3>Testing &amp; Open Source</h3><ul class="tags"><li>pytest</li><li>gunittest</li><li>Git</li><li>CI/CD</li><li>REST APIs</li><li>code review</li></ul></div>
+        <div class="skill-card reveal"><h3>Databases &amp; Cloud</h3><ul class="tags"><li>PostgreSQL</li><li>PostGIS</li><li>MySQL</li><li>Redis</li><li>Firebase</li><li>Docker</li><li>GCP Cloud Run</li><li>Vercel</li></ul></div>
       </div>
     </section>
 
-    <!-- ===== Honors + Education ===== -->
-    <section class="section" id="about">
-      <div class="wrap two-col">
-        <div class="col reveal">
-          <header class="section-head">
-            <span class="section-kicker">05 — Recognition</span>
-            <h2>Honors &amp; Awards</h2>
-          </header>
+    <!-- ===== Journey: Honors + Education ===== -->
+    <section class="section wrap" id="journey">
+      <header class="section-head reveal">
+        <span class="section-kicker">— Journey</span>
+        <h2>Honors &amp; Education</h2>
+      </header>
+      <div class="journey-grid">
+        <div class="jcard reveal">
+          <h3>Honors &amp; Awards</h3>
           <ul class="honors">
-            <li><strong>Apple Developer Academy — Admitted.</strong> Università Federico II with Apple, Naples (2026–27). Selected via assessment test and interview; full EU-funded scholarship (Regione Campania).</li>
+            <li><strong>Apple Developer Academy — Admitted.</strong> Università Federico II with Apple, Naples (2026–27). Full EU-funded scholarship (Regione Campania).</li>
             <li><strong>Top 100 (national), Meta Hackathon 2025.</strong></li>
-            <li><strong>Top 7.5% in Classical Machine Learning</strong> in the SST cohort; A* (top grade) in Machine Learning I &amp; II.</li>
+            <li><strong>Top 7.5% in Classical Machine Learning</strong> (SST cohort); A* in Machine Learning I &amp; II.</li>
             <li><strong>Rank 60, Social Summer of Code 2025</strong> — 260 points, 7 merged PRs.</li>
-            <li><strong>GitHub achievements:</strong> Pull Shark (×2), Pair Extraordinaire, Quickdraw.</li>
           </ul>
         </div>
-        <div class="col reveal">
-          <header class="section-head">
-            <span class="section-kicker">06 — Education</span>
-            <h2>Education</h2>
-          </header>
-          <div class="edu">
-            <div class="tl-row"><h3>B.Sc (Hons) Computer Science</h3><span class="tl-date">2024 — 2028</span></div>
-            <p class="tl-org">Scaler School of Technology (SST)</p>
-            <p class="card-desc">Second year · CGPA 8.2 (SST), 8.7 (BITS Pilani). Coursework across Machine Learning, DBMS, systems and full-stack development.</p>
-          </div>
-          <div class="edu-note">
-            <p class="card-desc">Also admitted to the <strong>Apple Developer Academy</strong> (2026–27, Naples) on a full scholarship.</p>
-          </div>
+        <div class="jcard reveal">
+          <h3>Education</h3>
+          <div class="edu-row"><h4>B.Sc (Hons) Computer Science</h4><span class="exp-date">2024 – 2028</span></div>
+          <p class="oss-org">Scaler School of Technology (SST)</p>
+          <p class="proj-desc">Second year · CGPA 8.2 (SST), 8.7 (BITS Pilani). Coursework across Machine Learning, DBMS, systems and full-stack development.</p>
+          <p class="proj-desc" style="margin-top:12px">Also admitted to the <strong>Apple Developer Academy</strong> (2026–27, Naples) on a full scholarship.</p>
         </div>
       </div>
     </section>
 
     <!-- ===== Contact ===== -->
-    <section class="section section-contact" id="contact">
-      <div class="wrap contact-wrap reveal">
-        <span class="section-kicker">07 — Contact</span>
-        <h2>Let’s build something.</h2>
-        <p class="section-desc">Open to internships, open-source collaboration and interesting problems. The fastest way to reach me is email.</p>
+    <section class="section wrap contact" id="contact">
+      <div class="reveal">
+        <span class="section-kicker">— Contact</span>
+        <h2 class="contact-title">Let&rsquo;s build something.</h2>
+        <p class="section-desc">Open to internships, open-source collaboration and hard problems. The fastest way to reach me is email.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="mailto:irajveer.bishnoi2310@gmail.com">Email me</a>
-          <a class="btn btn-ghost" href="assets/Rajveer_Bishnoi_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+          <a class="btn btn-primary" href="mailto:irajveer.bishnoi2310@gmail.com">Get in touch</a>
+          <a class="btn btn-ghost" href="assets/Rajveer_Bishnoi_Resume.pdf" target="_blank" rel="noopener">Résumé / CV</a>
         </div>
-        <ul class="hero-links" aria-label="Profiles">
-          <li><a href="https://github.com/RAJVEER42" target="_blank" rel="noopener">@RAJVEER42</a></li>
-          <li><a href="https://github.com/Valyrian-Code" target="_blank" rel="noopener">@Valyrian-Code</a></li>
-          <li><a href="https://www.linkedin.com/in/rajveer-bishnoi-576b62356" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://samaysarathi.in" target="_blank" rel="noopener">samaysarathi.in</a></li>
-        </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© <span id="year"></span> Rajveer Bishnoi</span>
-      <span>Built with plain HTML, CSS &amp; JavaScript · deployed on Vercel</span>
+    <div class="wrap">
+      <p class="quote">“Talk is cheap. Show me the code.” <span>— Linus Torvalds</span></p>
+      <div class="footer-row">
+        <span>© <span id="year"></span> Rajveer Bishnoi</span>
+        <span class="footer-links">
+          <a href="https://github.com/RAJVEER42" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/Valyrian-Code" target="_blank" rel="noopener">Open Source</a>
+          <a href="https://www.linkedin.com/in/rajveer-bishnoi-576b62356" target="_blank" rel="noopener">LinkedIn</a>
+        </span>
+      </div>
     </div>
   </footer>
 
