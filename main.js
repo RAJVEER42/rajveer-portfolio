@@ -140,6 +140,30 @@
     });
   }
 
+  /* ---------- Custom cursor (fine pointers only) ---------- */
+  var fine = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (fine && !reduce) {
+    var dot = document.createElement("div"); dot.className = "cursor-dot";
+    var ring = document.createElement("div"); ring.className = "cursor-ring";
+    document.body.appendChild(dot); document.body.appendChild(ring);
+    root.classList.add("cursor-enabled");
+    var mx = 0, my = 0, rx = 0, ry = 0, ready = false;
+    function place(el, x, y) { el.style.transform = "translate3d(" + x + "px," + y + "px,0) translate(-50%,-50%)"; }
+    window.addEventListener("mousemove", function (e) {
+      mx = e.clientX; my = e.clientY; place(dot, mx, my);
+      if (!ready) { ready = true; rx = mx; ry = my; root.classList.add("cursor-ready"); }
+    }, { passive: true });
+    (function loop() { rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18; place(ring, rx, ry); requestAnimationFrame(loop); })();
+    var interactive = "a, button, input, .proj, .oss, .skill-card, .jcard, .now-card, .cmdk-list li";
+    document.addEventListener("mouseover", function (e) { if (e.target.closest && e.target.closest(interactive)) ring.classList.add("is-hover"); });
+    document.addEventListener("mouseout", function (e) { if (e.target.closest && e.target.closest(interactive)) ring.classList.remove("is-hover"); });
+    document.addEventListener("mousedown", function () { ring.classList.add("is-down"); });
+    document.addEventListener("mouseup", function () { ring.classList.remove("is-down"); });
+    document.addEventListener("mouseleave", function () { root.classList.remove("cursor-ready"); });
+    document.addEventListener("mouseenter", function () { if (ready) root.classList.add("cursor-ready"); });
+  }
+
   /* ---------- Year ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
